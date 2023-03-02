@@ -1,0 +1,31 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text":"Get the butter"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/63ccdb84c190e966adcbb625
+
+###
+
+PUT http://localhost:3001/todo/complete/63cd22d618a8801e4c50b076
+
+###
+GET http://localhost:3001/todo/getTask/63ce3aa733a220f4753b6704
+
+###
+
+PATCH http://localhost:3001/todo/getTask/63ce9dc9dafa8c9811e948e0
+Content-Type: application/json
+
+{
+    "text":"flowers",
+    "completed":"false"
+}
